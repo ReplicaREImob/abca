@@ -26,13 +26,14 @@
     }
 	
 	#coming-soon-txt {
-		font-size: 20vw;
+		font-size: 15vw;
 	}
 	
 	#replica-logo {
 		position: absolute;
 		top: 0;
 		right: 0;
+		width: 120px;
 	}
 	
 	#loading-spinner {
@@ -47,6 +48,7 @@
 		top: 0;
 		left: 0;
 		z-index: 2;
+		pointer-events: none;
 		background-color: #a5683d;
 	}
 
@@ -56,7 +58,15 @@
 	
 	@media (min-width: 576px) {
 		#coming-soon-txt {
-			font-size: calc(100vh - 48rem);
+			font-size: 7rem;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		#replica-logo {
+			width: 60px;
+			top: -30px;
+			right: -30px;
 		}
 	}
 
@@ -82,7 +92,7 @@
 
 		<div class="d-flex w-100 h-100 justify-content-center" style="flex-flow: column;">
 		  <h1 id="coming-soon-txt" class="text-center m-0 mb-2">COMING SOON</h1>
-		  <img id="replica-logo" src="images/Replica_Logo.jpg" title="Logo Réplica" style="width: 120px;">
+		  <img id="replica-logo" src="images/Replica_Logo.jpg" title="Logo Réplica">
 		</div>
 
 		<div class="d-flex w-100 h-auto p-2" style="flex-flow: wrap; justify-content: space-evenly">
