@@ -71,6 +71,36 @@
 		opacity: 1;
 	}
 	
+	.btn {
+		border: 2px solid !important;
+		border-radius: 200px !important;
+		padding: 2rem;
+		transition-duration: 0.3s;
+	}
+	
+	.btn.btn-sm {
+		padding: 1rem;
+	}
+	
+	.btn.light {
+		border-color: #fff !important;
+		color: #fff !important;
+	}
+	
+		button.btn.light:hover {
+			background-color: #fff !important;
+		}
+		
+		button.btn.light:hover > span b {
+			color: #a5683d !important;
+		}
+	
+	#btn-brochura {
+		max-width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 	@media (max-width: 579px) {
 			
 		#replica-matosinhos-morada {
@@ -96,6 +126,10 @@
 	}
 	
 	@media (max-width: 768px) {
+		
+		#btn-brochura {
+			max-width: 100%;
+		}
 	
 		body {
 			padding: .75rem;
@@ -173,6 +207,9 @@
 		
 		<div class="d-flex w-100 h-100 justify-content-center" style="flex-flow: column;">
 		  <h1 id="coming-soon-txt" class="text-center m-0 mb-2">COMING SOON</h1>
+		  <button id="btn-brochura" class="btn btn-sm light" onclick="javascript:window.location.href='https://replicareimob.github.io/abca_brochura_digital/'">
+			<span><b>VER BROCHURA DIGITAL</b></span>
+		  </button>
 		</div>
 
 		<div id="morada-parent" class="d-flex w-100 h-auto p-2">
